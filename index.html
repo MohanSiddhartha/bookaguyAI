@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <style>
+        .porntube-logo {
+            width: 150px;
+            height: 98px;
+        }
+
+        #navItem1 {
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #navItem2 {
+            color: white;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        #navItem3 {
+            color: white;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        #navItem4 {
+            color: red;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        .banner-section-bg-container {
+            background-image: url("https://th.bing.com/th/id/R.e0abb1ac6c21f820775caecda371081c?rik=6PG%2fum02i4r1jw&riu=http%3a%2f%2fil8.picdn.net%2fshutterstock%2fvideos%2f19317832%2fthumb%2f1.jpg&ehk=E3k25iDCSOXVgTTz2SNNx4sEea4onkGxtabVqjygAYk%3d&risl=&pid=ImgRaw&r=0");
+            height: 100vh;
+            background-size: cover;
+        }
+        #navItem5{
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .banner-heading {
+            color: white;
+            font-family: cursive;
+            font-size: 58px;
+            font-weight: bolder;
+            padding-top: 90px;
+        }
+        
+
+        .banner-caption {
+            color: #f5f7fa;
+            font-family: "Bree";
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .custom-button {
+            color: white;
+            background-image: linear-gradient(blue, #a58d00);
+            width: 150px;
+            height: 60px;
+            font-size: 18px;
+            border-width: 0;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .main-page-desc {
+            color: white;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 22px;
+            font-family: "Comic Sans MS";
+
+        }
+
+        .custom-outline-button {
+            color: #d0b200;
+            background-color: transparent;
+            width: 150px;
+            height: 60px;
+            font-size: 18px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            border-radius: 8px;
+        }
+
+        .wcu-section {
+            background-image: linear-gradient(to bottom, #1d084f, #4f0808);
+
+        }
+
+        .wcu-section-heading {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .wcu-section-description {
+            color: #bcd1ce;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 16px;
+        }
+
+        .wcu-card {
+            text-align: center;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e5eaf4;
+            border-radius: 16px;
+        }
+
+        .wcu-card-image {
+            width: 87px;
+            height: 90px;
+        }
+
+        .wcu-card-title {
+            color: #323f4b;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .wcu-card-description {
+            color: #7b8794;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 16px;
+        }
+
+        .offers {
+            color: #323f4b;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .explore-menu-section {
+            background-image: linear-gradient(to right, black, #182b33);
+        }
+
+        .menu-section-heading {
+            color: White;
+            font-family: "Roboto";
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .menu-item-image {
+            border-radius: 16px;
+        }
+
+        .menu-card-title {
+            color: white;
+            font-weight: bold;
+            font-family: "Segoe UI";
+            font-size: 19px;
+            font-weight: 500;
+            margin-top: 24px;
+        }
+
+        .menu-item-link {
+            color: #d0b200;
+            font-family: "Roboto";
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .menu-item-card {
+            border-radius: 16px;
+        }
+
+        .healthy-food-section {
+            background-color: #f9fbfe;
+        }
+
+        .healthy-food-section-img {
+            width: 270px;
+        }
+
+        .healthy-food-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .healthy-food-section-description {
+            color: #5a7184;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 16px;
+        }
+        .explore-menu-description {
+            color: rgb(227, 30, 60);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 18px;
+        }
+
+        .delivery-and-payment-section {
+            background-color: white;
+        }
+
+        .delivery-and-payment-section-img {
+            width: 270px;
+        }
+
+        .delivery-and-payment-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .delivery-and-payment-section-description {
+            color: #5a7184;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 16px;
+        }
+
+        .payment-card-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 28px;
+        }
+
+        .thanking-customers-section {
+            background-image: radial-gradient(#fff8db, #fae38c);
+        }
+
+        .thanking-customers-section-heading {
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .thanking-customers-section-description {
+            color: #5a7184;
+            font-family: "Roboto";
+            font-size: 16px;
+        }
+
+        .thanking-customers-section-img {
+            width: 270px;
+            margin-bottom: 20px;
+        }
+
+        .thanking-customers-section-modal-title {
+            color: #d0b200;
+            font-weight: 800;
+        }
+
+        .follow-us-section {
+            background-color: white;
+        }
+
+        .follow-us-section-heading {
+            text-align: center;
+            color: #183b56;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .follow-us-icon-container {
+            background-color: #faf7e8;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            margin: 15px;
+            padding-top: 22px;
+            padding-bottom: 14px;
+            padding-right: 16px;
+            padding-left: 22px;
+        }
+
+        .icon {
+            color: #d0b200;
+            font-size: 35px;
+        }
+
+        .footer-section {
+            background-color: #0d2436;
+        }
+
+        .footer-section-mail-id {
+            color: #959ead;
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .footer-section-address {
+            color: #959ead;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;";
+            font-size: 20px;
+        }
+        .bot{
+            color: #d0b200;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.etsystatic.com/24196702/r/il/2d263b/2927689689/il_1140xN.2927689689_4kqx.jpg" class="porntube-logo" />
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Why Choose Us?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
+                    <a class="nav-link" id="navItem5">Packages</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Get Who Gets You</h1>
+            <p class="banner-caption mb-4">Meet and Fuck Tonight!!</p>
+            <button class="custom-button">View Menu</button>
+            <button class="custom-outline-button">Order Now</button>
+            <p class="main-page-desc">What would be porn without male pornstars? Don’t even think about it! There would be no porn without guys with big dicks who are able to fuck the hottest pornstars for hours without stopping! Although it sounds like a dream job, being a male pornstar is harder than you could imagine. And that’s the reason why we are here with the list of the best male pornstars, who deserve to be praised for their every performance!</p>
+        </div>
+    </div>
+
+
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">Why Choose Us?</h1>
+                    <p class="wcu-section-description">
+                        We have both fresh guys and experienced versions of famous persons.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Fast Service</h1>
+                        <p class="wcu-card-description">
+                            Experience your fun at the comfort of your home.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Fresh Guys</h1>
+                        <p class="wcu-card-description">
+                            The Fresh guys group provides fresh candidates
+                            directly picked from our partner firms so that
+                            you always get them very easy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Best Offers</h1>
+                        <p class="wcu-card-description">
+                            Booking Coupons & Offers upto
+                            <span class="offers">25% OFF</span>
+                            and Exclusive Promo Codes on All Online Sex Orders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Explore Menu</h1>
+                    <p class="explore-menu-description">Below, are the top male performers on JustForFans, all queer. They are ordered by number of subscribers.</p>
+                </div>
+                
+
+                <div class="col-12 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/v1684963181/127253787_1069584776825203_3430344018234497078_n_fbdkcs.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">SRIDHAR REDDY | 22Y | INDIA | +916309320490</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963171/IMG_20230525_004944_nuw33l.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">SIRISH | 23Y | INDIA | +919390021373</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963170/Screenshot_2023-05-25-01-09-45-63_1c337646f29875672b5a61192b9010f9_j0z1pa.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">ARAVIND SWAMY | 23Y | INDIA | +919347252866</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963182/82980064_1073750586308051_2924979279268523096_n_ps5kh1.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">AJAY KUMAR | 21Y | INDIA | +916281549732</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963170/IMG_20230525_005200_yxvhal.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">SAI CHANDRA | 21Y | INDIA | +918179755516</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963179/IMG20220324184825_z2qhtd.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">ABHIJITH | 21Y | INDIA | +917093357435</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963171/IMG-20230521-WA0005_bmjk2o.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">VENKATESH | 22Y | INDIA | +917995860580</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963171/IMG_20230525_004423_opgesk.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">SRINIVAS ABHISHEK | 22Y | INDIA | +916305997198</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963176/IMG20221118033923_plcyha.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">SHIVA KUMAR | 22Y | INDIA | +918897457306</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://res.cloudinary.com/do4dmazrk/image/upload/c_scale,h_1010,w_1010/v1684963171/IMG_20230525_005023_cu80hc.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">SAI TEJA | 22Y | INDIA | +919121301291</h1>
+                        <a href="" class="menu-item-link">
+                            Book Now
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="healthy-food-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="text-center pb-5">
+                        <img src="https://th.bing.com/th/id/OIP.PInWunwjd3VE5k3erloUoAHaHa?pid=ImgDet&rs=1" class="healthy-food-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="healthy-food-section-heading">
+                        Fresh, Experienced, Hard, Busty, Dry, Handsome Men
+                    </h1>
+                    <p class="healthy-food-section-description">
+                        Say no to local guys and go fully with our range of
+                        fresh guys and gays. Pamper your body and your senses with
+                        the true and adulterated gifts from ours.
+                    </p>
+                    <button class="custom-button">Try Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-and-payment-section pt-5 pb-5" id="deliveryPaymentSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <div class="text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="delivery-and-payment-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <h1 class="delivery-and-payment-section-heading">
+                        Delivery and Payment
+                    </h1>
+                    <p class="delivery-and-payment-section-description">
+                        Enjoy hassle-free payment with the plenitude of payment options
+                        available for you. Get live tracking and locate your guy on a
+                        live map. It's quite a sight to see your candidate arrive to your door.
+                        Plus, you get a 5% discount on every order every time you pay
+                        online.
+                    </p>
+                    <button class="custom-button">Book Now</button>
+                    <div class="mt-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thanking-customers-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-customers-section-heading">
+                        Thank you for being a valuable customer to us.
+                    </h1>
+                    <p class="thanking-customers-section-description">
+                        We have a surprise gift for you
+                    </p>
+                    <div class="d-md-none">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                    <div>
+                        <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                            Redeem Gift
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog mt-5">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                                            Gift Voucher
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png" class="w-100" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://i.etsystatic.com/24196702/r/il/2d263b/2927689689/il_1140xN.2927689689_4kqx.jpg" class="porntube-logo" />
+                    <h1 class="footer-section-mail-id">bookaguy@sexpistols.com</h1>
+                    <p class="footer-section-address">
+                        10-275/4A Narapally, Hyderabad, India.
+                    </p>
+                    <p class="explore-menu-section bot">@Designed by Siddhartha😂</p>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
